@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/197/197604.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Nunito:wght@400;600;700&display=swap');
@@ -39,6 +40,7 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
+
 </head>
 <body class="text-gray-800">
 
@@ -50,26 +52,29 @@
                     <i class="fas fa-torii-gate text-red-600 text-2xl mr-3"></i>
                     <h1 class="text-xl font-bold text-gray-900 tracking-tight">日本語 <span class="text-black-600">Study Guide</span></h1>
                 </div>
-                <!-- Mobile Menu Button -->
                 <div class="md:hidden">
                     <button onclick="toggleMobileMenu()" class="text-gray-500 hover:text-blue-600 focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
-                <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-2">
-                    <button onclick="switchTab('writing')" class="tab-btn active px-4 py-2 rounded-lg text-sm font-medium transition-colors text-gray-600 hover:bg-gray-100">Writing & Grammar</button>
-                    <button onclick="switchTab('vocab')" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition-colors text-gray-600 hover:bg-gray-100">Vocabulary (Kana)</button>
-                    <button onclick="switchTab('kanji')" class="tab-btn px-4 py-2 rounded-lg text-sm font-medium transition-colors text-gray-600 hover:bg-gray-100">Kanji List (N4-N5)</button>
+                    <button onclick="switchTab('writing')" class="tab-btn active px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider">Writing</button>
+                    <button onclick="switchTab('verbs')" class="tab-btn px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider">Verbs</button>
+                    <button onclick="switchTab('adjectives')" class="tab-btn px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider">Adjectives</button>
+                    <button onclick="switchTab('adverbs')" class="tab-btn px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider">Adverbs</button>
+                    <button onclick="switchTab('vocab')" class="tab-btn px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider">Vocabulary</button>
+                    <button onclick="switchTab('kanji')" class="tab-btn px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider">Kanji</button>
                 </nav>
             </div>
         </div>
-        <!-- Mobile Nav Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <button onclick="switchTab('writing'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Writing & Grammar</button>
-                <button onclick="switchTab('vocab'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Vocabulary (Kana)</button>
-                <button onclick="switchTab('kanji'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Kanji List</button>
+                <button onclick="switchTab('writing'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Writing</button>
+                <button onclick="switchTab('verbs'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Verbs</button>
+                <button onclick="switchTab('adjectives'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Adjectives</button>
+                <button onclick="switchTab('adverbs'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Adverbs</button>
+                <button onclick="switchTab('vocab'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Vocabulary</button>
+                <button onclick="switchTab('kanji'); toggleMobileMenu()" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50">Kanji</button>
             </div>
         </div>
     </header>
@@ -86,11 +91,11 @@
                 <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
                     <h2 class="text-lg font-bold text-blue-600 mb-4 flex items-center"><i class="fas fa-pen-nib mr-2"></i>Hiragana</h2>
                     <div class="grid grid-cols-5 gap-2 text-center jp-font text-lg">
-                        <div class="p-2 bg-gray-50 rounded">あ<br><span class="text-xs text-gray-400 font-sans">a</span></div>
-                        <div class="p-2 bg-gray-50 rounded">い<br><span class="text-xs text-gray-400 font-sans">i</span></div>
-                        <div class="p-2 bg-gray-50 rounded">う<br><span class="text-xs text-gray-400 font-sans">u</span></div>
-                        <div class="p-2 bg-gray-50 rounded">え<br><span class="text-xs text-gray-400 font-sans">e</span></div>
-                        <div class="p-2 bg-gray-50 rounded">お<br><span class="text-xs text-gray-400 font-sans">o</span></div>
+                        <div class="p-2 bg-gray-50 rounded">あ</div>
+                        <div class="p-2 bg-gray-50 rounded">い</div>
+                        <div class="p-2 bg-gray-50 rounded">う</div>
+                        <div class="p-2 bg-gray-50 rounded">え</div>
+                        <div class="p-2 bg-gray-50 rounded">お</div>
                         
                         <div class="p-2 bg-gray-50 rounded">か</div><div class="p-2 bg-gray-50 rounded">き</div><div class="p-2 bg-gray-50 rounded">く</div><div class="p-2 bg-gray-50 rounded">け</div><div class="p-2 bg-gray-50 rounded">こ</div>
                         <div class="p-2 bg-gray-50 rounded">さ</div><div class="p-2 bg-gray-50 rounded">し</div><div class="p-2 bg-gray-50 rounded">す</div><div class="p-2 bg-gray-50 rounded">せ</div><div class="p-2 bg-gray-50 rounded">そ</div>
@@ -120,6 +125,37 @@
                         <div class="p-2 bg-orange-50 rounded">ラ</div><div class="p-2 bg-orange-50 rounded">リ</div><div class="p-2 bg-orange-50 rounded">ル</div><div class="p-2 bg-orange-50 rounded">レ</div><div class="p-2 bg-orange-50 rounded">ロ</div>
                         <div class="p-2 bg-orange-50 rounded">ワ</div><div class="p-2 opacity-0"></div><div class="p-2 opacity-0"></div><div class="p-2 opacity-0"></div><div class="p-2 bg-orange-50 rounded">ヲ</div>
                         <div class="p-2 bg-orange-50 rounded">ン</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Basic Expressions -->
+            <div class="bg-emerald-50 rounded-xl p-8 mt-8">
+                <h3 class="text-xl font-bold text-emerald-800 mb-4">Essential Expressions</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
+                        <div class="text-xs text-gray-500 mb-1">Good Morning</div>
+                        <div class="jp-font font-bold text-lg text-emerald-700">おはようございます</div>
+                    </div>
+                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
+                        <div class="text-xs text-gray-500 mb-1">Hello</div>
+                        <div class="jp-font font-bold text-lg text-emerald-700">こんにちは</div>
+                    </div>
+                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
+                        <div class="text-xs text-gray-500 mb-1">Good Evening</div>
+                        <div class="jp-font font-bold text-lg text-emerald-700">こんばんは</div>
+                    </div>
+                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
+                        <div class="text-xs text-gray-500 mb-1">Thank you</div>
+                        <div class="jp-font font-bold text-lg text-emerald-700">ありがとうございます</div>
+                    </div>
+                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
+                        <div class="text-xs text-gray-500 mb-1">Excuse me / Sorry</div>
+                        <div class="jp-font font-bold text-lg text-emerald-700">すみません</div>
+                    </div>
+                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
+                        <div class="text-xs text-gray-500 mb-1">Before eating</div>
+                        <div class="jp-font font-bold text-lg text-emerald-700">いただきます</div>
                     </div>
                 </div>
             </div>
@@ -158,16 +194,42 @@
                 </div>
             </div>
 
-            <!-- Negative & Past Tense -->
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mt-8">
-                <h3 class="font-bold text-gray-800 mb-4">Verb Tense Reference (Formal ~masu)</h3>
-                <table class="w-full text-sm">
-                    <tr class="bg-gray-100"><th class="p-2">Form</th><th class="p-2">Ending</th><th class="p-2">Example</th></tr>
-                    <tr><td class="p-2 border-b">Present Affirmative</td><td class="p-2 border-b">~ます</td><td class="p-2 border-b">たべます (Eat)</td></tr>
-                    <tr><td class="p-2 border-b">Present Negative</td><td class="p-2 border-b">~ません</td><td class="p-2 border-b">たべません (Don't eat)</td></tr>
-                    <tr><td class="p-2 border-b">Past Affirmative</td><td class="p-2 border-b">~ました</td><td class="p-2 border-b">たべました (Ate)</td></tr>
-                    <tr><td class="p-2">Past Negative</td><td class="p-2">~ませんでした</td><td class="p-2">たべませんでした (Didn't eat)</td></tr>
-                </table>
+            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Demonstratives (こそあど)</h3>
+            <div class="overflow-x-auto mt-4">
+                    <table class="w-full bg-white rounded-lg shadow-sm text-sm">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="p-3 text-left">Category</th>
+                                <th class="p-3 text-left text-blue-600">KO (Near Me)</th>
+                                <th class="p-3 text-left text-orange-600">SO (Near You)</th>
+                                <th class="p-3 text-left text-green-600">A (Far)</th>
+                                <th class="p-3 text-left text-red-600">DO (Which?)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-3 font-bold">Things</td>
+                                <td class="p-3">これ (Kore)</td>
+                                <td class="p-3">それ (Sore)</td>
+                                <td class="p-3">あれ (Are)</td>
+                                <td class="p-3 font-bold">どれ (Dore)</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 font-bold">Places</td>
+                                <td class="p-3">ここ (Koko)</td>
+                                <td class="p-3">そこ (Soko)</td>
+                                <td class="p-3">あそこ (Asoko)</td>
+                                <td class="p-3 font-bold">どこ (Doko)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold">Direction</td>
+                                <td class="p-3">こちら (Kochira)</td>
+                                <td class="p-3">そちら (Sochira)</td>
+                                <td class="p-3">あちら (Achira)</td>
+                                <td class="p-3 font-bold">どちら (Dochira)</td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
 
             <!-- Sentence Structure -->
@@ -206,283 +268,52 @@
 
         </div>
 
-        <!-- TAB 2: VOCABULARY (NO KANJI) -->
-        <div id="vocab-tab" class="tab-content hidden space-y-8 animate-fade-in">
-
-            <!-- Basic Expressions -->
-            <div class="bg-emerald-50 rounded-xl p-8 mt-8">
-                <h3 class="text-xl font-bold text-emerald-800 mb-4">Essential Expressions</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
-                        <div class="text-xs text-gray-500 mb-1">Good Morning</div>
-                        <div class="jp-font font-bold text-lg text-emerald-700">おはようございます</div>
-                    </div>
-                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
-                        <div class="text-xs text-gray-500 mb-1">Hello</div>
-                        <div class="jp-font font-bold text-lg text-emerald-700">こんにちは</div>
-                    </div>
-                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
-                        <div class="text-xs text-gray-500 mb-1">Good Evening</div>
-                        <div class="jp-font font-bold text-lg text-emerald-700">こんばんは</div>
-                    </div>
-                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
-                        <div class="text-xs text-gray-500 mb-1">Thank you</div>
-                        <div class="jp-font font-bold text-lg text-emerald-700">ありがとうございます</div>
-                    </div>
-                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
-                        <div class="text-xs text-gray-500 mb-1">Excuse me / Sorry</div>
-                        <div class="jp-font font-bold text-lg text-emerald-700">すみません</div>
-                    </div>
-                    <div class="bg-white p-3 rounded shadow-sm border border-emerald-100">
-                        <div class="text-xs text-gray-500 mb-1">Before eating</div>
-                        <div class="jp-font font-bold text-lg text-emerald-700">いただきます</div>
-                    </div>
-                </div>
-            </div>
-            <!-- Numbers & Time Grid -->
-            <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Basics: Numbers & Time</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
-                    <h4 class="font-bold text-blue-600 mb-3">Numbers (かず)</h4>
-                    <div class="grid grid-cols-2 gap-2 text-sm">
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>1</span> <span class="jp-font font-bold">いち</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>2</span> <span class="jp-font font-bold">に</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>3</span> <span class="jp-font font-bold">さん</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>4</span> <span class="jp-font font-bold">よん / し</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>5</span> <span class="jp-font font-bold">ご</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>6</span> <span class="jp-font font-bold">ろく</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>7</span> <span class="jp-font font-bold">なな / しち</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>8</span> <span class="jp-font font-bold">はち</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>9</span> <span class="jp-font font-bold">きゅう</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>10</span> <span class="jp-font font-bold">じゅう</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>100</span> <span class="jp-font font-bold">ひゃく</span></div>
-                        <div class="flex justify-between border-b border-gray-100 py-1"><span>1000</span> <span class="jp-font font-bold">せん</span></div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
-                    <h4 class="font-bold text-blue-600 mb-3">Time & Days</h4>
-                    <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
-                        <div class="col-span-2 font-semibold text-gray-500 text-xs mt-1">Days of Week</div>
-                        <div class="flex justify-between py-1"><span>Mon</span> <span class="jp-font font-bold">げつようび</span></div>
-                        <div class="flex justify-between py-1"><span>Tue</span> <span class="jp-font font-bold">かようび</span></div>
-                        <div class="flex justify-between py-1"><span>Wed</span> <span class="jp-font font-bold">すいようび</span></div>
-                        <div class="flex justify-between py-1"><span>Thu</span> <span class="jp-font font-bold">もくようび</span></div>
-                        <div class="flex justify-between py-1"><span>Fri</span> <span class="jp-font font-bold">きんようび</span></div>
-                        <div class="flex justify-between py-1"><span>Sat</span> <span class="jp-font font-bold">どようび</span></div>
-                        <div class="flex justify-between py-1"><span>Sun</span> <span class="jp-font font-bold">にちようび</span></div>
-                        
-                        <div class="col-span-2 font-semibold text-gray-500 text-xs mt-3">Time of Day</div>
-                        <div class="flex justify-between py-1"><span>AM</span> <span class="jp-font font-bold">ごぜん</span></div>
-                        <div class="flex justify-between py-1"><span>PM</span> <span class="jp-font font-bold">ごご</span></div>
-                        <div class="flex justify-between py-1"><span>Morning</span> <span class="jp-font font-bold">あさ</span></div>
-                        <div class="flex justify-between py-1"><span>Night</span> <span class="jp-font font-bold">よる</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Months -->
-            <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-l-4 border-red-500 mt-4">
-                <h4 class="font-bold text-red-600 mb-3">Months (月 - Gatsu)</h4>
-                <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                    <div class="flex justify-between py-1 border-b"><span>January</span> <span class="jp-font font-bold">いちがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>February</span> <span class="jp-font font-bold">にがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>March</span> <span class="jp-font font-bold">さんがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>April</span> <span class="jp-font font-bold">しがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>May</span> <span class="jp-font font-bold">ごがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>June</span> <span class="jp-font font-bold">ろくがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>July</span> <span class="jp-font font-bold">しちがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>August</span> <span class="jp-font font-bold">はちがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>September</span> <span class="jp-font font-bold">くがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>October</span> <span class="jp-font font-bold">じゅうがつ</span></div>
-                    <div class="flex justify-between py-1 border-b"><span>November</span> <span class="jp-font font-bold">じゅういちがつ</span></div>
-                    <div class="flex justify-between py-1"><span>December</span> <span class="jp-font font-bold">じゅうにがつ</span></div>
-                </div>
-            </div>
-
-            <!-- Days of the Month -->
-            <div class="bg-white rounded-lg shadow-sm p-4 card-hover border-l-4 border-red-500 mt-4">
-                <h4 class="font-bold text-red-600 mb-3">Days of Month (日 - Nichi)</h4>
-                <div class="grid grid-cols-4 gap-2 text-xs">
-                    <div class="flex justify-between"><span>1st</span> <span class="jp-font font-bold">ついたち</span></div>
-                    <div class="flex justify-between"><span>2nd</span> <span class="jp-font font-bold">ふつか</span></div>
-                    <div class="flex justify-between"><span>3rd</span> <span class="jp-font font-bold">みっか</span></div>
-                    <div class="flex justify-between"><span>4th</span> <span class="jp-font font-bold">よっか</span></div>
-                    <div class="flex justify-between"><span>5th</span> <span class="jp-font font-bold">いつか</span></div>
-                    <div class="flex justify-between"><span>6th</span> <span class="jp-font font-bold">むいか</span></div>
-                    <div class="flex justify-between"><span>7th</span> <span class="jp-font font-bold">なのか</span></div>
-                    <div class="flex justify-between"><span>8th</span> <span class="jp-font font-bold">ようか</span></div>
-                    <div class="flex justify-between"><span>9th</span> <span class="jp-font font-bold">ここのか</span></div>
-                    <div class="flex justify-between"><span>10th</span> <span class="jp-font font-bold">とおか</span></div>
-                    <div class="flex justify-between"><span>20th</span> <span class="jp-font font-bold">はつか</span></div>
-                    <div class="flex justify-between"><span>30th</span> <span class="jp-font font-bold">もみ</span></div>
-                </div>
-            </div>
-
-            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Relative Time Matrix (時 - Toki)</h3>
-            <div class="grid md:grid-cols-3 gap-6 mt-4">
+        <!-- TAB 2: VERBS -->
+        <div id="verbs-tab" class="tab-content hidden">  
+            
+            <!-- Negative & Past Tense -->
+            <div class="bg-gray-800 text-white p-6 rounded-xl shadow-lg mt-8 border border-gray-700">
+                <h4 class="text-yellow-400 font-bold mb-4 flex items-center">
+                    <i class="fas fa-clock mr-2 text-sm"></i> Verb Tense Reference (Formal ~masu)
+                </h4>
                 
-                <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-cyan-500 card-hover">
-                    <h4 class="font-bold text-cyan-600 mb-3 underline decoration-2">Days (日 - Hi)</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>The day before yesterday</span> <span class="jp-font font-bold text-red-600">おととい (Ototoi)</span></div>
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>Yesterday</span> <span class="jp-font font-bold">きのう (Kinou)</span></div>
-                        <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>Today</span> <span class="jp-font font-bold text-blue-700">きょう (Kyou)</span></div>
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>Tomorrow</span> <span class="jp-font font-bold">あした (Ashita)</span></div>
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>The day after tomorrow</span> <span class="jp-font font-bold text-green-600">あさって (Asatte)</span></div>
-                        <div class="flex justify-between py-1"><span>Every day</span> <span class="jp-font font-bold">まいにち</span></div>
-                    </div>
+                <div class="overflow-hidden rounded-lg border border-gray-700">
+                    <table class="w-full text-sm text-left">
+                        <thead>
+                            <tr class="bg-gray-900/50 text-gray-400 uppercase text-[10px] tracking-widest">
+                                <th class="p-3">Form</th>
+                                <th class="p-3">Ending</th>
+                                <th class="p-3">Example</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700">
+                            <tr class="hover:bg-gray-700/30 transition-colors">
+                                <td class="p-3"><span class="text-green-400 font-semibold">Present (+)</span></td>
+                                <td class="p-3 jp-font text-gray-300">~ます</td>
+                                <td class="p-3"><b class="jp-font">たべます</b> <span class="text-gray-500 text-xs ml-1">(Eat)</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition-colors">
+                                <td class="p-3"><span class="text-red-400 font-semibold">Present (-)</span></td>
+                                <td class="p-3 jp-font text-gray-300">~ません</td>
+                                <td class="p-3"><b class="jp-font">たべません</b> <span class="text-gray-500 text-xs ml-1">(Don't eat)</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition-colors">
+                                <td class="p-3"><span class="text-blue-400 font-semibold">Past (+)</span></td>
+                                <td class="p-3 jp-font text-gray-300">~ました</td>
+                                <td class="p-3"><b class="jp-font">たべました</b> <span class="text-gray-500 text-xs ml-1">(Ate)</span></td>
+                            </tr>
+                            <tr class="hover:bg-gray-700/30 transition-colors">
+                                <td class="p-3"><span class="text-orange-400 font-semibold">Past (-)</span></td>
+                                <td class="p-3 jp-font text-gray-300">~ませんでした</td>
+                                <td class="p-3"><b class="jp-font">たべませんでした</b> <span class="text-gray-500 text-xs ml-1">(Didn't eat)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-indigo-500 card-hover">
-                    <h4 class="font-bold text-indigo-600 mb-3 underline decoration-2">Weeks (週 - Shuu)</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>The week before last</span> <span class="jp-font font-bold">せんせんしゅう</span></div>
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>Last week</span> <span class="jp-font font-bold">せんしゅう</span></div>
-                        <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>This week</span> <span class="jp-font font-bold text-blue-700">こんしゅう</span></div>
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>Next week</span> <span class="jp-font font-bold">らいしゅう</span></div>
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>The week after next</span> <span class="jp-font font-bold">さらいしゅう</span></div>
-                        <div class="flex justify-between py-1"><span>Every week</span> <span class="jp-font font-bold">まいしゅう</span></div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-teal-500 card-hover">
-                    <h4 class="font-bold text-teal-600 mb-3 underline decoration-2">Months & Years</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>Last month</span> <span class="jp-font font-bold">せんげつ</span></div>
-                        <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>This month</span> <span class="jp-font font-bold text-blue-700">こんげつ</span></div>
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>Next month</span> <span class="jp-font font-bold">らいげつ</span></div>
-                        <hr class="my-2">
-                        <div class="flex justify-between py-1 border-b border-gray-50"><span>Last year</span> <span class="jp-font font-bold">きょねん</span></div>
-                        <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>This year</span> <span class="jp-font font-bold text-blue-700">ことし</span></div>
-                        <div class="flex justify-between py-1"><span>Next year</span> <span class="jp-font font-bold">らいねん</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Places & Transport -->
-            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Places & Travel</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
-                    <h4 class="font-bold text-red-600 mb-3">Essential Services</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Post Office</span> <span class="jp-font font-bold text-lg">ゆうびんきょく</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Bank</span> <span class="jp-font font-bold text-lg">ぎんこう</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Hospital</span> <span class="jp-font font-bold text-lg">びょういん</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Police Box</span> <span class="jp-font font-bold text-lg">こうばん</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Police Station</span> <span class="jp-font font-bold text-lg">けいさつしょ</span></div>
-                        <div class="flex justify-between py-1"><span>City Hall</span> <span class="jp-font font-bold text-lg">しやくしょ</span></div>
-                        <div class="flex justify-between py-1"><span>Station</span> <span class="jp-font font-bold text-lg">えき</span></div>
-                        <div class="flex justify-between py-1"><span>Ticket</span> <span class="jp-font font-bold text-lg">きっぷ</span></div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
-                    <h4 class="font-bold text-green-600 mb-3">Transportation (のりもの)</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Train</span> <span class="jp-font font-bold text-lg">でんしゃ</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Subway</span> <span class="jp-font font-bold text-lg">ちかてつ</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Bullet Train</span> <span class="jp-font font-bold text-lg">しんかんせん</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Bus</span> <span class="jp-font font-bold text-lg">バス</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Taxi</span> <span class="jp-font font-bold text-lg">タクシー</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Bicycle</span> <span class="jp-font font-bold text-lg">じてんしゃ</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Car</span> <span class="jp-font font-bold text-lg">くるま</span></div>
-                        <div class="flex justify-between border-b border-gray-50 py-1"><span>Airplane</span> <span class="jp-font font-bold text-lg">ひこうき</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- City  -->
-            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">City & Buildings (場所と建物)</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
-
-                <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-yellow-500">
-                    <h4 class="font-bold text-yellow-600 mb-2">Shops (屋 - ya)</h4>
-                    <div class="space-y-1 text-sm">
-                        <div class="flex justify-between py-1 border-b"><span>Bakery</span> <span class="jp-font font-bold">パンや</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Bookstore</span> <span class="jp-font font-bold">ほんや</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Florist</span> <span class="jp-font font-bold">はなや</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Butcher</span> <span class="jp-font font-bold">にくや</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Fishmonger</span> <span class="jp-font font-bold">さかなや</span></div>
-                        <div class="flex justify-between py-1"><span>Pharmacy</span> <span class="jp-font font-bold">くすりや / やっきょく</span></div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-green-500">
-                    <h4 class="font-bold text-green-600 mb-2">Culture & Leisure</h4>
-                    <div class="space-y-1 text-sm">
-                        <div class="flex justify-between py-1 border-b"><span>Library</span> <span class="jp-font font-bold">としょかん</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Museum</span> <span class="jp-font font-bold">はくぶつかん</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Art Museum</span> <span class="jp-font font-bold">びじゅつかん</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Aquarium</span> <span class="jp-font font-bold">すいぞくかん</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Zoo</span> <span class="jp-font font-bold">どうぶつえん</span></div>
-                        <div class="flex justify-between py-1"><span>Gymnasium</span> <span class="jp-font font-bold">たいいくかん</span></div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-blue-500">
-                    <h4 class="font-bold text-blue-600 mb-2">Modern City</h4>
-                    <div class="space-y-1 text-sm">
-                        <div class="flex justify-between py-1 border-b"><span>Convenience Store</span> <span class="jp-font font-bold">コンビニ</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Supermarket</span> <span class="jp-font font-bold">スーパー</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Dept. Store</span> <span class="jp-font font-bold">デパート</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Hotel</span> <span class="jp-font font-bold">ホテル</span></div>
-                        <div class="flex justify-between py-1 border-b"><span>Parking Lot</span> <span class="jp-font font-bold">ちゅうしゃじょう</span></div>
-                        <div class="flex justify-between py-1"><span>Gas Station</span> <span class="jp-font font-bold">ガソリンスタンド</span></div>
-                        <div class="flex justify-between py-1"><span>Shop / Store</span> <span class="jp-font font-bold">みせ / てんぽ</span></div>
-                        <div class="flex justify-between py-1"><span>Groceries</span> <span class="jp-font font-bold">かいもの</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Daily Life -->
-            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Daily Life</h3>
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Verbs -->
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-t-4 border-red-400">
-                    <h4 class="font-bold text-red-500 mb-3">Kitchen (だいどころ)</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between py-1"><span>Refrigerator</span> <span class="jp-font font-bold">れいぞうこ</span></div>
-                        <div class="flex justify-between py-1"><span>Stove</span> <span class="jp-font font-bold">こんろ</span></div>
-                        <div class="flex justify-between py-1"><span>Microwave</span> <span class="jp-font font-bold">でんしレンジ</span></div>
-                        <div class="flex justify-between py-1"><span>Pot</span> <span class="jp-font font-bold">なべ</span></div>
-                        <div class="flex justify-between py-1"><span>Pan</span> <span class="jp-font font-bold">フライパン</span></div>
-                        <div class="flex justify-between py-1"><span>Knife</span> <span class="jp-font font-bold">ほうちょう</span></div>
-                        <div class="flex justify-between py-1"><span>Spoon</span> <span class="jp-font font-bold">スプーン</span></div>
-                        <div class="flex justify-between py-1"><span>Fork</span> <span class="jp-font font-bold">フォーク</span></div>
-                        <div class="flex justify-between py-1"><span>Plate</span> <span class="jp-font font-bold">さら</span></div>
-                    </div>
-                </div>
-                <!-- School -->
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-t-4 border-purple-400">
-                    <h4 class="font-bold text-purple-500 mb-3">School (がっこう)</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between py-1"><span>Student</span> <span class="jp-font font-bold">がくせい</span></div>
-                        <div class="flex justify-between py-1"><span>Teacher</span> <span class="jp-font font-bold">せんせい</span></div>
-                        <div class="flex justify-between py-1"><span>Homework</span> <span class="jp-font font-bold">しゅくだい</span></div>
-                        <div class="flex justify-between py-1"><span>Exam</span> <span class="jp-font font-bold">しけん</span></div>
-                        <div class="flex justify-between py-1"><span>Classroom</span> <span class="jp-font font-bold">きょうしつ</span></div>
-                        <div class="flex justify-between py-1"><span>Book</span> <span class="jp-font font-bold">ほん</span></div>
-                        <div class="flex justify-between py-1"><span>Cafeteria</span> <span class="jp-font font-bold">かしょ</span></div>
-                        <div class="flex justify-between py-1"><span>Dictionary</span> <span class="jp-font font-bold">じしょ</span></div>
-                        <div class="flex justify-between py-1"><span>University</span> <span class="jp-font font-bold">だいがく</span></div>
-                    </div>
-                </div>
-
-                <!-- Office -->
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-t-4 border-gray-400">
-                    <h4 class="font-bold text-gray-600 mb-3">Work (しごと)</h4>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex justify-between py-1"><span>Company</span> <span class="jp-font font-bold">かいしゃ</span></div>
-                        <div class="flex justify-between py-1"><span>Meeting</span> <span class="jp-font font-bold">かいぎ</span></div>
-                        <div class="flex justify-between py-1"><span>Telephone</span> <span class="jp-font font-bold">でんわ</span></div>
-                        <div class="flex justify-between py-1"><span>Computer</span> <span class="jp-font font-bold">パソコン</span></div>
-                        <div class="flex justify-between py-1"><span>Email</span> <span class="jp-font font-bold">メール</span></div>
-                        <div class="flex justify-between py-1"><span>Fax</span> <span class="jp-font font-bold">ファックス</span></div>
-                        <div class="flex justify-between py-1"><span>Report</span> <span class="jp-font font-bold">ほうこく</span></div>
-                        <div class="flex justify-between py-1"><span>Document</span> <span class="jp-font font-bold">しりょう</span></div>
-                        <div class="flex justify-between py-1"><span>Letter</span> <span class="jp-font font-bold">てがみ</span></div>
-                    </div>
-                </div>
+                
+                <p class="text-[10px] text-gray-500 mt-4 italic">
+                    * Note: These endings apply to all Verb Groups in their formal polite form.
+                </p>
             </div>
 
             <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Full Verb List</h3>
@@ -598,47 +429,88 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Family & Colors</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
-                    <h4 class="font-bold text-pink-600 mb-3">Family (かぞく)</h4>
-                    <div class="grid grid-cols-2 gap-x-4 text-sm">
-                        <div class="flex justify-between border-b py-1"><span>Father</span> <span class="jp-font font-bold">おとうさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Mother</span> <span class="jp-font font-bold">おかあさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Older Brother</span> <span class="jp-font font-bold">おにいさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Older Sister</span> <span class="jp-font font-bold">おねえさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Younger Brother</span> <span class="jp-font font-bold">おとうと</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Younger Sister</span> <span class="jp-font font-bold">いもうと</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Grandfather</span> <span class="jp-font font-bold">おじいさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Grandmother</span> <span class="jp-font font-bold">おばあさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Uncle</span> <span class="jp-font font-bold">おじさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Aunt</span> <span class="jp-font font-bold">おばさん</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Cousin</span> <span class="jp-font font-bold">いとこ</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Husband</span> <span class="jp-font font-bold">だんなさん</span></div>
-                        <div class="flex justify-between py-1"><span>Wife</span> <span class="jp-font font-bold">おくさん</span></div>
+        <!-- TAB 3: ADJECTIVES -->
+        <div id="adjectives-tab" class="tab-content hidden"> 
+            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Adjectives (形容詞 - Keiyoushi)</h3>
+            <div>
+                <div class="grid md:grid-cols-2 gap-6 mt-4">
+                    <div class="bg-white rounded-lg shadow-sm p-5 border-t-4 border-blue-500">
+                        <h4 class="font-bold text-blue-600 text-lg mb-3">Type I (End in ~i)</h4>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
+                            <div class="flex justify-between border-b py-1"><span>Good</span> <b>いい (Ii)</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Bad</span> <b>わるい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Big</span> <b>おおきい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Small</span> <b>ちいさい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>New</span> <b>あたらしい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Old</span> <b>ふるい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Hot</span> <b>あつい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Cold</span> <b>さむい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>White</span> <b>しろい</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Young</span> <b>わかい</b></div>
+                        </div>
+
+                        <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                            <p class="text-xs font-bold text-blue-800 uppercase mb-2">Conjugation (Ex: Difficult)</p>
+                            <div class="space-y-1 text-sm">
+                                <div class="flex justify-between"><span>Present (+)</span> <b>~desu</b></div>
+                                <div class="flex justify-between"><span>Present (-)</span> <b class="text-red-600">~kunai</b></div>
+                                <div class="flex justify-between"><span>Past (+)</span> <b class="text-blue-700">~katta</b></div>
+                                <div class="flex justify-between"><span>Past (-)</span> <b class="text-red-700">~kunakatta</b></div>
+                            </div>
+                            <p class="text-[10px] mt-2 text-blue-600 italic">* Exception II: Yokunai, Yokatta, Yokunakatta</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-5 border-t-4 border-green-500">
+                        <h4 class="font-bold text-green-600 text-lg mb-3">Type NA (Nouns)</h4>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
+                            <div class="flex justify-between border-b py-1"><span>Quiet</span> <b>しずか</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Lively</span> <b>にぎやか</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Safe</span> <b>あんぜん</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Free/Unoccupied</span> <b>ひま</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Kind</span> <b>しんせつ</b></div>
+                            <div class="flex justify-between border-b py-1"><span>Convenient</span> <b>べんり</b></div>
+                            <div class="flex justify-between border-b py-1 text-red-600 font-bold"><span>Pretty/Clean</span> <b>きれい*</b></div>
+                            <div class="flex justify-between border-b py-1 text-red-600 font-bold"><span>Famous</span> <b>ゆうめい*</b></div>
+                        </div>
+
+                        <div class="mt-4 p-3 bg-green-50 rounded-lg">
+                            <p class="text-xs font-bold text-green-800 uppercase mb-2">Conjugation (Same as DESU)</p>
+                            <div class="space-y-1 text-sm">
+                                <div class="flex justify-between"><span>Present (+)</span> <b>~desu</b></div>
+                                <div class="flex justify-between"><span>Present (-)</span> <b>~janai desu</b></div>
+                                <div class="flex justify-between"><span>Past (+)</span> <b>~deshita</b></div>
+                                <div class="flex justify-between"><span>Past (-)</span> <b>~janakatta desu</b></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
-                    <h4 class="font-bold text-indigo-600 mb-3">Colors (いろ)</h4>
-                    <div class="grid grid-cols-2 gap-x-4 text-sm">
-                        <div class="flex justify-between border-b py-1"><span>Red</span> <span class="jp-font font-bold">あか</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Blue</span> <span class="jp-font font-bold">あお</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Black</span> <span class="jp-font font-bold">くろ</span></div>
-                        <div class="flex justify-between border-b py-1"><span>White</span> <span class="jp-font font-bold">しろ</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Yellow</span> <span class="jp-font font-bold">きいろ</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Green</span> <span class="jp-font font-bold">みどり</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Purple</span> <span class="jp-font font-bold">むらさき</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Pink</span> <span class="jp-font font-bold">ピンク</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Orange</span> <span class="jp-font font-bold">オレンジ</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Brown</span> <span class="jp-font font-bold">ちゃいろ</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Gray</span> <span class="jp-font font-bold">ぐれー</span></div>
-                        <div class="flex justify-between border-b py-1"><span>Gold</span> <span class="jp-font font-bold">きん</span></div>
-                        <div class="flex justify-between py-1"><span>Silver</span> <span class="jp-font font-bold">ぎん</span></div>
+                <div class="mt-6 grid md:grid-cols-2 gap-4">
+                    <div class="bg-gray-800 text-white p-4 rounded-xl">
+                        <h4 class="text-yellow-400 font-bold mb-2">Identification vs Description</h4>
+                        <div class="space-y-2 text-sm">
+                            <p><span class="text-blue-300">Adj + Noun:</span> <br><b>Takai yama</b> (High mountain)</p>
+                            <p><span class="text-green-300">Subject + ga + Adj:</span> <br><b>Yama ga takai desu</b> (The mountain is high)</p>
+                            <p class="text-xs text-gray-400 mt-2">* Remember: NA-adj needs "na" to connect: <b>Hima na hito</b></p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-gray-200 p-4 rounded-xl">
+                        <h4 class="text-gray-800 font-bold mb-2">Connectors (But...)</h4>
+                        <p class="text-sm">To contrast ideas use the particle <b>~ga</b> after the first adjective or verb:</p>
+                        <div class="mt-2 p-2 bg-gray-50 rounded font-mono text-sm">
+                            [Sentence 1] + <b>ga</b>, [Sentence 2].
+                        </div>
+                        <p class="text-xs mt-2 italic">"Kono kasa wa benri desu ga, takai desu."<br>(This umbrella is convenient, but it is expensive).</p>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <!-- TAB 4: ADVERBS -->
+        <div id="adverbs-tab" class="tab-content hidden"> 
             <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Frequency & Intensity (程度 - Teido)</h3>
             <div class="grid md:grid-cols-2 gap-6 mt-4">
                 <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-green-500 card-hover">
@@ -662,89 +534,341 @@
                 </div>
             </div>
 
-            <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Demonstratives (こそあど)</h3>
-            <div class="overflow-x-auto mt-4">
-                <table class="w-full bg-white rounded-lg shadow-sm text-sm">
-                    <thead class="bg-gray-100">
-                        <tr>
-                            <th class="p-3 text-left">Category</th>
-                            <th class="p-3 text-left text-blue-600">KO (Near Me)</th>
-                            <th class="p-3 text-left text-orange-600">SO (Near You)</th>
-                            <th class="p-3 text-left text-green-600">A (Far)</th>
-                            <th class="p-3 text-left text-red-600">DO (Which?)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="p-3 font-bold">Things</td>
-                            <td class="p-3">これ (Kore)</td>
-                            <td class="p-3">それ (Sore)</td>
-                            <td class="p-3">あれ (Are)</td>
-                            <td class="p-3 font-bold">どれ (Dore)</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="p-3 font-bold">Places</td>
-                            <td class="p-3">ここ (Koko)</td>
-                            <td class="p-3">そこ (Soko)</td>
-                            <td class="p-3">あそこ (Asoko)</td>
-                            <td class="p-3 font-bold">どこ (Doko)</td>
-                        </tr>
-                        <tr>
-                            <td class="p-3 font-bold">Direction</td>
-                            <td class="p-3">こちら (Kochira)</td>
-                            <td class="p-3">そちら (Sochira)</td>
-                            <td class="p-3">あちら (Achira)</td>
-                            <td class="p-3 font-bold">どちら (Dochira)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
             <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Location Prepositions (位置)</h3>
             <div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-                <div class="p-3 bg-white rounded border-b-2 border-red-400 shadow-sm">
-                    <p class="text-xs text-gray-500">Above / Under</p>
-                    <p class="jp-font font-bold">うえ / した</p>
-                    <p class="text-xs font-mono">Ue / Shita</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                    <div class="p-3 bg-white rounded border-b-2 border-red-400 shadow-sm">
+                        <p class="text-xs text-gray-500">Above / Under</p>
+                        <p class="jp-font font-bold">うえ / した</p>
+                        <p class="text-xs font-mono">Ue / Shita</p>
+                    </div>
+                    <div class="p-3 bg-white rounded border-b-2 border-blue-400 shadow-sm">
+                        <p class="text-xs text-gray-500">Front / Behind</p>
+                        <p class="jp-font font-bold">まえ / うしろ</p>
+                        <p class="text-xs font-mono">Mae / Ushiro</p>
+                    </div>
+                    <div class="p-3 bg-white rounded border-b-2 border-green-400 shadow-sm">
+                        <p class="text-xs text-gray-500">Right / Left</p>
+                        <p class="jp-font font-bold">みぎ / ひだり</p>
+                        <p class="text-xs font-mono">Migi / Hidari</p>
+                    </div>
+                    <div class="p-3 bg-white rounded border-b-2 border-yellow-400 shadow-sm">
+                        <p class="text-xs text-gray-500">Inside / Outside</p>
+                        <p class="jp-font font-bold">なか / そと</p>
+                        <p class="text-xs font-mono">Naka / Soto</p>
+                    </div>
                 </div>
-                <div class="p-3 bg-white rounded border-b-2 border-blue-400 shadow-sm">
-                    <p class="text-xs text-gray-500">Front / Behind</p>
-                    <p class="jp-font font-bold">まえ / うしろ</p>
-                    <p class="text-xs font-mono">Mae / Ushiro</p>
-                </div>
-                <div class="p-3 bg-white rounded border-b-2 border-green-400 shadow-sm">
-                    <p class="text-xs text-gray-500">Right / Left</p>
-                    <p class="jp-font font-bold">みぎ / ひだり</p>
-                    <p class="text-xs font-mono">Migi / Hidari</p>
-                </div>
-                <div class="p-3 bg-white rounded border-b-2 border-yellow-400 shadow-sm">
-                    <p class="text-xs text-gray-500">Inside / Outside</p>
-                    <p class="jp-font font-bold">なか / そと</p>
-                    <p class="text-xs font-mono">Naka / Soto</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                    <div class="p-3 bg-white rounded border-l-4 border-gray-400 shadow-sm">
+                        <p class="text-xs text-gray-500">Next to / Beside</p>
+                        <p class="jp-font font-bold">となり / よこ</p>
+                        <p class="text-xs font-mono">Tonari / Yoko</p>
+                    </div>
+                    <div class="p-3 bg-white rounded border-l-4 border-gray-400 shadow-sm">
+                        <p class="text-xs text-gray-500">Nearby / Close</p>
+                        <p class="jp-font font-bold">ちかく</p>
+                        <p class="text-xs font-mono">Chikaku</p>
+                    </div>
+                    <div class="p-3 bg-white rounded border-l-4 border-gray-400 shadow-sm">
+                        <p class="text-xs text-gray-500">Between</p>
+                        <p class="jp-font font-bold">あいだ</p>
+                        <p class="text-xs font-mono">Aida</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-                <div class="p-3 bg-white rounded border-l-4 border-gray-400 shadow-sm">
-                    <p class="text-xs text-gray-500">Next to / Beside</p>
-                    <p class="jp-font font-bold">となり / よこ</p>
-                    <p class="text-xs font-mono">Tonari / Yoko</p>
-                </div>
-                <div class="p-3 bg-white rounded border-l-4 border-gray-400 shadow-sm">
-                    <p class="text-xs text-gray-500">Nearby / Close</p>
-                    <p class="jp-font font-bold">ちかく</p>
-                    <p class="text-xs font-mono">Chikaku</p>
-                </div>
-                <div class="p-3 bg-white rounded border-l-4 border-gray-400 shadow-sm">
-                    <p class="text-xs text-gray-500">Between</p>
-                    <p class="jp-font font-bold">あいだ</p>
-                    <p class="text-xs font-mono">Aida</p>
-                </div>
-            </div>
-            </div>
-
         </div>
+
+        <!-- TAB 5: VOCABULARY -->
+        <div id="vocab-tab" class="tab-content hidden space-y-8 animate-fade-in">
+
+                <!-- Numbers & Time Grid -->
+                <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Basics: Numbers & Time</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                        <h4 class="font-bold text-blue-600 mb-3">Numbers (かず)</h4>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>1</span> <span class="jp-font font-bold">いち</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>2</span> <span class="jp-font font-bold">に</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>3</span> <span class="jp-font font-bold">さん</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>4</span> <span class="jp-font font-bold">よん / し</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>5</span> <span class="jp-font font-bold">ご</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>6</span> <span class="jp-font font-bold">ろく</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>7</span> <span class="jp-font font-bold">なな / しち</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>8</span> <span class="jp-font font-bold">はち</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>9</span> <span class="jp-font font-bold">きゅう</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>10</span> <span class="jp-font font-bold">じゅう</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>100</span> <span class="jp-font font-bold">ひゃく</span></div>
+                            <div class="flex justify-between border-b border-gray-100 py-1"><span>1000</span> <span class="jp-font font-bold">せん</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                        <h4 class="font-bold text-blue-600 mb-3">Time & Days</h4>
+                        <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                            <div class="col-span-2 font-semibold text-gray-500 text-xs mt-1">Days of Week</div>
+                            <div class="flex justify-between py-1"><span>Mon</span> <span class="jp-font font-bold">げつようび</span></div>
+                            <div class="flex justify-between py-1"><span>Tue</span> <span class="jp-font font-bold">かようび</span></div>
+                            <div class="flex justify-between py-1"><span>Wed</span> <span class="jp-font font-bold">すいようび</span></div>
+                            <div class="flex justify-between py-1"><span>Thu</span> <span class="jp-font font-bold">もくようび</span></div>
+                            <div class="flex justify-between py-1"><span>Fri</span> <span class="jp-font font-bold">きんようび</span></div>
+                            <div class="flex justify-between py-1"><span>Sat</span> <span class="jp-font font-bold">どようび</span></div>
+                            <div class="flex justify-between py-1"><span>Sun</span> <span class="jp-font font-bold">にちようび</span></div>
+                            
+                            <div class="col-span-2 font-semibold text-gray-500 text-xs mt-3">Time of Day</div>
+                            <div class="flex justify-between py-1"><span>AM</span> <span class="jp-font font-bold">ごぜん</span></div>
+                            <div class="flex justify-between py-1"><span>PM</span> <span class="jp-font font-bold">ごご</span></div>
+                            <div class="flex justify-between py-1"><span>Morning</span> <span class="jp-font font-bold">あさ</span></div>
+                            <div class="flex justify-between py-1"><span>Night</span> <span class="jp-font font-bold">よる</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Months -->
+                <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-l-4 border-red-500 mt-4">
+                    <h4 class="font-bold text-red-600 mb-3">Months (月 - Gatsu)</h4>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                        <div class="flex justify-between py-1 border-b"><span>January</span> <span class="jp-font font-bold">いちがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>February</span> <span class="jp-font font-bold">にがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>March</span> <span class="jp-font font-bold">さんがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>April</span> <span class="jp-font font-bold">しがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>May</span> <span class="jp-font font-bold">ごがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>June</span> <span class="jp-font font-bold">ろくがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>July</span> <span class="jp-font font-bold">しちがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>August</span> <span class="jp-font font-bold">はちがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>September</span> <span class="jp-font font-bold">くがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>October</span> <span class="jp-font font-bold">じゅうがつ</span></div>
+                        <div class="flex justify-between py-1 border-b"><span>November</span> <span class="jp-font font-bold">じゅういちがつ</span></div>
+                        <div class="flex justify-between py-1"><span>December</span> <span class="jp-font font-bold">じゅうにがつ</span></div>
+                    </div>
+                </div>
+
+                <!-- Days of the Month -->
+                <div class="bg-white rounded-lg shadow-sm p-4 card-hover border-l-4 border-red-500 mt-4">
+                    <h4 class="font-bold text-red-600 mb-3">Days of Month (日 - Nichi)</h4>
+                    <div class="grid grid-cols-4 gap-2 text-xs">
+                        <div class="flex justify-between"><span>1st</span> <span class="jp-font font-bold">ついたち</span></div>
+                        <div class="flex justify-between"><span>2nd</span> <span class="jp-font font-bold">ふつか</span></div>
+                        <div class="flex justify-between"><span>3rd</span> <span class="jp-font font-bold">みっか</span></div>
+                        <div class="flex justify-between"><span>4th</span> <span class="jp-font font-bold">よっか</span></div>
+                        <div class="flex justify-between"><span>5th</span> <span class="jp-font font-bold">いつか</span></div>
+                        <div class="flex justify-between"><span>6th</span> <span class="jp-font font-bold">むいか</span></div>
+                        <div class="flex justify-between"><span>7th</span> <span class="jp-font font-bold">なのか</span></div>
+                        <div class="flex justify-between"><span>8th</span> <span class="jp-font font-bold">ようか</span></div>
+                        <div class="flex justify-between"><span>9th</span> <span class="jp-font font-bold">ここのか</span></div>
+                        <div class="flex justify-between"><span>10th</span> <span class="jp-font font-bold">とおか</span></div>
+                        <div class="flex justify-between"><span>20th</span> <span class="jp-font font-bold">はつか</span></div>
+                        <div class="flex justify-between"><span>30th</span> <span class="jp-font font-bold">もみ</span></div>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Relative Time Matrix (時 - Toki)</h3>
+                <div class="grid md:grid-cols-3 gap-6 mt-4">
+                    
+                    <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-cyan-500 card-hover">
+                        <h4 class="font-bold text-cyan-600 mb-3 underline decoration-2">Days (日 - Hi)</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>The day before yesterday</span> <span class="jp-font font-bold text-red-600">おととい (Ototoi)</span></div>
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>Yesterday</span> <span class="jp-font font-bold">きのう (Kinou)</span></div>
+                            <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>Today</span> <span class="jp-font font-bold text-blue-700">きょう (Kyou)</span></div>
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>Tomorrow</span> <span class="jp-font font-bold">あした (Ashita)</span></div>
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>The day after tomorrow</span> <span class="jp-font font-bold text-green-600">あさって (Asatte)</span></div>
+                            <div class="flex justify-between py-1"><span>Every day</span> <span class="jp-font font-bold">まいにち</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-indigo-500 card-hover">
+                        <h4 class="font-bold text-indigo-600 mb-3 underline decoration-2">Weeks (週 - Shuu)</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>The week before last</span> <span class="jp-font font-bold">せんせんしゅう</span></div>
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>Last week</span> <span class="jp-font font-bold">せんしゅう</span></div>
+                            <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>This week</span> <span class="jp-font font-bold text-blue-700">こんしゅう</span></div>
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>Next week</span> <span class="jp-font font-bold">らいしゅう</span></div>
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>The week after next</span> <span class="jp-font font-bold">さらいしゅう</span></div>
+                            <div class="flex justify-between py-1"><span>Every week</span> <span class="jp-font font-bold">まいしゅう</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-teal-500 card-hover">
+                        <h4 class="font-bold text-teal-600 mb-3 underline decoration-2">Months & Years</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>Last month</span> <span class="jp-font font-bold">せんげつ</span></div>
+                            <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>This month</span> <span class="jp-font font-bold text-blue-700">こんげつ</span></div>
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>Next month</span> <span class="jp-font font-bold">らいげつ</span></div>
+                            <hr class="my-2">
+                            <div class="flex justify-between py-1 border-b border-gray-50"><span>Last year</span> <span class="jp-font font-bold">きょねん</span></div>
+                            <div class="flex justify-between py-1 border-b bg-blue-50 px-1 rounded"><span>This year</span> <span class="jp-font font-bold text-blue-700">ことし</span></div>
+                            <div class="flex justify-between py-1"><span>Next year</span> <span class="jp-font font-bold">らいねん</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Places & Transport -->
+                <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Places & Travel</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                        <h4 class="font-bold text-red-600 mb-3">Essential Services</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Post Office</span> <span class="jp-font font-bold text-lg">ゆうびんきょく</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Bank</span> <span class="jp-font font-bold text-lg">ぎんこう</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Hospital</span> <span class="jp-font font-bold text-lg">びょういん</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Police Box</span> <span class="jp-font font-bold text-lg">こうばん</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Police Station</span> <span class="jp-font font-bold text-lg">けいさつしょ</span></div>
+                            <div class="flex justify-between py-1"><span>City Hall</span> <span class="jp-font font-bold text-lg">しやくしょ</span></div>
+                            <div class="flex justify-between py-1"><span>Station</span> <span class="jp-font font-bold text-lg">えき</span></div>
+                            <div class="flex justify-between py-1"><span>Ticket</span> <span class="jp-font font-bold text-lg">きっぷ</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                        <h4 class="font-bold text-green-600 mb-3">Transportation (のりもの)</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Train</span> <span class="jp-font font-bold text-lg">でんしゃ</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Subway</span> <span class="jp-font font-bold text-lg">ちかてつ</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Bullet Train</span> <span class="jp-font font-bold text-lg">しんかんせん</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Bus</span> <span class="jp-font font-bold text-lg">バス</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Taxi</span> <span class="jp-font font-bold text-lg">タクシー</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Bicycle</span> <span class="jp-font font-bold text-lg">じてんしゃ</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Car</span> <span class="jp-font font-bold text-lg">くるま</span></div>
+                            <div class="flex justify-between border-b border-gray-50 py-1"><span>Airplane</span> <span class="jp-font font-bold text-lg">ひこうき</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- City  -->
+                <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">City & Buildings (場所と建物)</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+
+                    <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-yellow-500">
+                        <h4 class="font-bold text-yellow-600 mb-2">Shops (屋 - ya)</h4>
+                        <div class="space-y-1 text-sm">
+                            <div class="flex justify-between py-1 border-b"><span>Bakery</span> <span class="jp-font font-bold">パンや</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Bookstore</span> <span class="jp-font font-bold">ほんや</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Florist</span> <span class="jp-font font-bold">はなや</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Butcher</span> <span class="jp-font font-bold">にくや</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Fishmonger</span> <span class="jp-font font-bold">さかなや</span></div>
+                            <div class="flex justify-between py-1"><span>Pharmacy</span> <span class="jp-font font-bold">くすりや / やっきょく</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-600 mb-2">Culture & Leisure</h4>
+                        <div class="space-y-1 text-sm">
+                            <div class="flex justify-between py-1 border-b"><span>Library</span> <span class="jp-font font-bold">としょかん</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Museum</span> <span class="jp-font font-bold">はくぶつかん</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Art Museum</span> <span class="jp-font font-bold">びじゅつかん</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Aquarium</span> <span class="jp-font font-bold">すいぞくかん</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Zoo</span> <span class="jp-font font-bold">どうぶつえん</span></div>
+                            <div class="flex justify-between py-1"><span>Gymnasium</span> <span class="jp-font font-bold">たいいくかん</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-4 border-l-4 border-blue-500">
+                        <h4 class="font-bold text-blue-600 mb-2">Modern City</h4>
+                        <div class="space-y-1 text-sm">
+                            <div class="flex justify-between py-1 border-b"><span>Convenience Store</span> <span class="jp-font font-bold">コンビニ</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Supermarket</span> <span class="jp-font font-bold">スーパー</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Dept. Store</span> <span class="jp-font font-bold">デパート</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Hotel</span> <span class="jp-font font-bold">ホテル</span></div>
+                            <div class="flex justify-between py-1 border-b"><span>Parking Lot</span> <span class="jp-font font-bold">ちゅうしゃじょう</span></div>
+                            <div class="flex justify-between py-1"><span>Gas Station</span> <span class="jp-font font-bold">ガソリンスタンド</span></div>
+                            <div class="flex justify-between py-1"><span>Shop / Store</span> <span class="jp-font font-bold">みせ / てんぽ</span></div>
+                            <div class="flex justify-between py-1"><span>Groceries</span> <span class="jp-font font-bold">かいもの</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daily Life -->
+                <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Daily Life</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Verbs -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-t-4 border-red-400">
+                        <h4 class="font-bold text-red-500 mb-3">Kitchen (だいどころ)</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between py-1"><span>Refrigerator</span> <span class="jp-font font-bold">れいぞうこ</span></div>
+                            <div class="flex justify-between py-1"><span>Stove</span> <span class="jp-font font-bold">こんろ</span></div>
+                            <div class="flex justify-between py-1"><span>Microwave</span> <span class="jp-font font-bold">でんしレンジ</span></div>
+                            <div class="flex justify-between py-1"><span>Pot</span> <span class="jp-font font-bold">なべ</span></div>
+                            <div class="flex justify-between py-1"><span>Pan</span> <span class="jp-font font-bold">フライパン</span></div>
+                            <div class="flex justify-between py-1"><span>Knife</span> <span class="jp-font font-bold">ほうちょう</span></div>
+                            <div class="flex justify-between py-1"><span>Spoon</span> <span class="jp-font font-bold">スプーン</span></div>
+                            <div class="flex justify-between py-1"><span>Fork</span> <span class="jp-font font-bold">フォーク</span></div>
+                            <div class="flex justify-between py-1"><span>Plate</span> <span class="jp-font font-bold">さら</span></div>
+                        </div>
+                    </div>
+                    <!-- School -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-t-4 border-purple-400">
+                        <h4 class="font-bold text-purple-500 mb-3">School (がっこう)</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between py-1"><span>Student</span> <span class="jp-font font-bold">がくせい</span></div>
+                            <div class="flex justify-between py-1"><span>Teacher</span> <span class="jp-font font-bold">せんせい</span></div>
+                            <div class="flex justify-between py-1"><span>Homework</span> <span class="jp-font font-bold">しゅくだい</span></div>
+                            <div class="flex justify-between py-1"><span>Exam</span> <span class="jp-font font-bold">しけん</span></div>
+                            <div class="flex justify-between py-1"><span>Classroom</span> <span class="jp-font font-bold">きょうしつ</span></div>
+                            <div class="flex justify-between py-1"><span>Book</span> <span class="jp-font font-bold">ほん</span></div>
+                            <div class="flex justify-between py-1"><span>Cafeteria</span> <span class="jp-font font-bold">かしょ</span></div>
+                            <div class="flex justify-between py-1"><span>Dictionary</span> <span class="jp-font font-bold">じしょ</span></div>
+                            <div class="flex justify-between py-1"><span>University</span> <span class="jp-font font-bold">だいがく</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Office -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover border-t-4 border-gray-400">
+                        <h4 class="font-bold text-gray-600 mb-3">Work (しごと)</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between py-1"><span>Company</span> <span class="jp-font font-bold">かいしゃ</span></div>
+                            <div class="flex justify-between py-1"><span>Meeting</span> <span class="jp-font font-bold">かいぎ</span></div>
+                            <div class="flex justify-between py-1"><span>Telephone</span> <span class="jp-font font-bold">でんわ</span></div>
+                            <div class="flex justify-between py-1"><span>Computer</span> <span class="jp-font font-bold">パソコン</span></div>
+                            <div class="flex justify-between py-1"><span>Email</span> <span class="jp-font font-bold">メール</span></div>
+                            <div class="flex justify-between py-1"><span>Fax</span> <span class="jp-font font-bold">ファックス</span></div>
+                            <div class="flex justify-between py-1"><span>Report</span> <span class="jp-font font-bold">ほうこく</span></div>
+                            <div class="flex justify-between py-1"><span>Document</span> <span class="jp-font font-bold">しりょう</span></div>
+                            <div class="flex justify-between py-1"><span>Letter</span> <span class="jp-font font-bold">てがみ</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800 border-b pb-2 mt-8">Family & Colors</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                        <h4 class="font-bold text-pink-600 mb-3">Family (かぞく)</h4>
+                        <div class="grid grid-cols-2 gap-x-4 text-sm">
+                            <div class="flex justify-between border-b py-1"><span>Father</span> <span class="jp-font font-bold">おとうさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Mother</span> <span class="jp-font font-bold">おかあさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Older Brother</span> <span class="jp-font font-bold">おにいさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Older Sister</span> <span class="jp-font font-bold">おねえさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Younger Brother</span> <span class="jp-font font-bold">おとうと</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Younger Sister</span> <span class="jp-font font-bold">いもうと</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Grandfather</span> <span class="jp-font font-bold">おじいさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Grandmother</span> <span class="jp-font font-bold">おばあさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Uncle</span> <span class="jp-font font-bold">おじさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Aunt</span> <span class="jp-font font-bold">おばさん</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Cousin</span> <span class="jp-font font-bold">いとこ</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Husband</span> <span class="jp-font font-bold">だんなさん</span></div>
+                            <div class="flex justify-between py-1"><span>Wife</span> <span class="jp-font font-bold">おくさん</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 card-hover">
+                        <h4 class="font-bold text-indigo-600 mb-3">Colors (いろ)</h4>
+                        <div class="grid grid-cols-2 gap-x-4 text-sm">
+                            <div class="flex justify-between border-b py-1"><span>Red</span> <span class="jp-font font-bold">あか</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Blue</span> <span class="jp-font font-bold">あお</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Black</span> <span class="jp-font font-bold">くろ</span></div>
+                            <div class="flex justify-between border-b py-1"><span>White</span> <span class="jp-font font-bold">しろ</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Yellow</span> <span class="jp-font font-bold">きいろ</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Green</span> <span class="jp-font font-bold">みどり</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Purple</span> <span class="jp-font font-bold">むらさき</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Pink</span> <span class="jp-font font-bold">ピンク</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Orange</span> <span class="jp-font font-bold">オレンジ</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Brown</span> <span class="jp-font font-bold">ちゃいろ</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Gray</span> <span class="jp-font font-bold">ぐれー</span></div>
+                            <div class="flex justify-between border-b py-1"><span>Gold</span> <span class="jp-font font-bold">きん</span></div>
+                            <div class="flex justify-between py-1"><span>Silver</span> <span class="jp-font font-bold">ぎん</span></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
 
         <!-- TAB 3: KANJI LIST (FROM IMAGE) -->
         <div id="kanji-tab" class="tab-content hidden animate-fade-in">
@@ -874,8 +998,8 @@
             });
 
             // Highlight clicked button (approximate matching based on onclick attribute)
-            const activeBtns = document.querySelectorAll(`button[onclick="switchTab('${tabId}')"]`);
-            activeBtns.forEach(btn => {
+                const activeBtns = document.querySelectorAll(`button[onclick*="'${tabId}'"]`);            
+                activeBtns.forEach(btn => {
                 btn.classList.remove('text-gray-600', 'hover:bg-gray-100');
                 btn.classList.add('active', 'bg-blue-600', 'text-white');
             });
@@ -888,5 +1012,4 @@
         }
     </script>
 </body>
-
 </html>
